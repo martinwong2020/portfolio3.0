@@ -1,0 +1,144 @@
+html,body{
+    padding:0;
+    margin:0;
+    height:100%;
+}
+body{
+    display:flex;
+    justify-content:center;
+    overflow-y:hidden ;
+    background-color: #f1dfd1;
+background-image: linear-gradient(315deg, #f1dfd1 0%, #f6f0ea 74%);
+}
+#container{
+    /* border:solid 2px green; */
+    width:70%;
+    height:100%;
+}
+#img_container{
+    width:200px;
+    height:200px;
+    overflow:hidden;
+    border-radius:50%;
+    /* border: solid black 5px; */
+}
+#pfp_img{
+    width:100%;
+    height:auto;
+    
+    /* border-radius:50%; */
+    
+    
+}
+#about_text{
+    width:65%;
+    /* border:solid 2px blue; */
+    
+}
+#header{
+    display:flex;
+    justify-content: space-evenly;
+    margin-top:3%;
+    margin-bottom:2%;
+}
+#content_container{
+    width:100%;
+    border:black solid 5px;
+    /* margin-top:2%; */
+    overflow:hidden;
+}
+#content{
+    width:99%;
+    /* border:solid black 1px; */
+    height:600px;
+    /* margin-top:3%; */
+    overflow-x:hidden;
+    overflow-y:auto;
+    display:grid;
+    /* grid-template-areas:
+    'img1 img2 img3 img4'; */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    object-fit: cover;
+    column-gap:2%;
+    row-gap: 5%;
+    /* margin-left:2%;
+    margin-right:2%; */
+    
+}
+#content::-webkit-scrollbar{
+    width:10px;
+    
+}
+#content::-webkit-scrollbar-track{
+    background:gray;
+    border-radius:20px;
+}
+#content::-webkit-scrollbar-thumb{
+    background-color:white;
+    border-radius:5px;
+    border:3px solid gray;
+}
+.elements{
+    margin:0;
+    width:92%;
+    height:500px;
+    border:solid 5px black;
+    margin-left:2%;
+    margin-right:2%;
+    background-color: white;
+}
+.elements:hover{
+    box-shadow:-15px 15px 10px gray;
+    width:95%;
+    height:520px;
+}
+.element_img{
+    width:100%;
+    height:90%;
+    border-bottom:5px solid black;
+}
+figcaption{
+    text-align:center;
+    color:black;
+}
+#input_container{
+    width:100%;
+    height:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    /* border:solid brown 2px; */
+}
+#Search{
+    background-color: black;
+    color:white;
+    width:50%;
+    height:30px;
+    border-radius:30px;
+    padding-left:20px;  
+}
+#Search::placeholder{
+    text-align:center;
+    color:white;
+}
+
+#fullscreen{
+    display:none;
+    width:100vw;
+    height:100vh;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color:rgba(0,0,0,0.5);
+    z-index:99;
+    position:absolute;
+
+}
+#pdf_tag{
+    margin-left:10%;
+    margin-right:10%;
+}
+a{
+    text-decoration:none;
+}
