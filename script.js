@@ -2,7 +2,7 @@
 function Search(){
     let input=document.getElementById('Search').value;
     input=input.toLowerCase();
-    let items=document.getElementsByClassName("elements");
+    let items=document.getElementsByClassName("element_tag");
     let captions=document.getElementsByClassName("caption");
     for (let i=0; i<items.length; i++){
         // console.log(captions[i].innerText);

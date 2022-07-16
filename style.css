@@ -58,7 +58,7 @@ body{
     overflow-y:auto;
     display:grid;
     /* grid-template-areas:
-    'img1 img2 img3 img4'; */
+    'img1 img2 img3'; */
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
     object-fit: cover;
@@ -66,6 +66,7 @@ body{
     row-gap: 5%;
     /* margin-left:2%;
     margin-right:2%; */
+    direction: ltr;
     
 }
 #content::-webkit-scrollbar{
@@ -165,3 +166,7 @@ a{
 .icon_container{
     text-align: center;
 }
+
+/* .element_tag{
+    display:flex;
+} */
